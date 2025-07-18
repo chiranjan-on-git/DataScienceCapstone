@@ -1,6 +1,8 @@
 # Winning the Space Race with Data Science
 
-![SpaceX Falcon 9 Launch](https://github.com/your-username/your-repo-name/blob/main/images/cover_image.png?raw=true)
+<img src="https://github.com/user-attachments/assets/bf0b9a10-7048-41da-8db5-308ce3b9e9b0" width="300" alt="image"/>
+
+
 
 ## Project Overview
 
