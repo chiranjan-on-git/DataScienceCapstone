@@ -25,7 +25,7 @@ I utilized data gathered from the SpaceX REST API and web scraping from Wikipedi
     - [Machine Learning Model Performance](#machine-learning-model-performance)
 - [How to Use](#how-to-use)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
+- [Project Files](#project-files)
 - [Author](#author)
 - [License](#license)
 
@@ -37,16 +37,12 @@ SpaceX has revolutionized the space industry with its focus on reusable rocket t
 
 The dataset for this project was compiled from two primary sources to ensure both structured reliability and historical context:
 
-1.  **SpaceX REST API (v4):** Provided structured and up-to-date information on SpaceX missions, including launch details, payloads, and outcomes. Key endpoints utilized:
-    *   `/v4/capsules`
-    *   `/v4/cores`
-    *   `/v4/launches/past`
-
+1.  **SpaceX REST API (v4):** Provided structured and up-to-date information on SpaceX missions, including launch details, payloads, and outcomes.
 2.  **Wikipedia (Web Scraping):** Complementary historical and contextual data for Falcon 9 launches was extracted from related Wikipedia pages, parsed from HTML tables into a Pandas DataFrame.
 
 ## Methodology
 
-My approach involved several key data science stages, from raw data collection to predictive modeling. Each stage is documented in dedicated Jupyter notebooks.
+My approach involved several key data science stages, from raw data collection to predictive modeling. Each stage is documented in dedicated Jupyter notebooks or Python scripts.
 
 ### Data Collection
 
@@ -54,8 +50,9 @@ My approach involved several key data science stages, from raw data collection t
 *   **Process:**
     *   I utilized the `requests` library to interact with the SpaceX REST API.
     *   I performed web scraping using libraries like `BeautifulSoup` to extract and parse HTML tables from Wikipedia.
-*   **Notebook:** [Data Collection Notebook]([YOUR_GITHUB_URL_FOR_DATA_COLLECTION_NOTEBOOK])
-    *   *(Remember to replace `[YOUR_GITHUB_URL_FOR_DATA_COLLECTION_NOTEBOOK]` with the actual link to your notebook on GitHub)*
+*   **Relevant Files:**
+    *   [`jupyter-labs-spacex-data-collection-api.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-spacex-data-collection-api.ipynb)
+    *   [`jupyter-labs-webscraping.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-webscraping.ipynb)
 
 ### Data Wrangling
 
@@ -68,7 +65,8 @@ My approach involved several key data science stages, from raw data collection t
         *   Number of launches per site.
         *   Number and occurrence of each orbit type.
         *   Mission outcomes for various orbits.
-*   **Notebook:** [Data Wrangling Notebook]([YOUR_GITHUB_URL_FOR_DATA_WRANGLING_NOTEBOOK])
+*   **Relevant File:**
+    *   [`labs-jupyter-spacex-Data wrangling.ipynb`](https://github.com/your-username/your-repo-name/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb)
 
 ### Exploratory Data Analysis (EDA)
 
@@ -88,9 +86,9 @@ My approach involved several key data science stages, from raw data collection t
     *   Names of booster versions carrying maximum payload mass.
     *   2015 launch records with 'Failure (drone ship)' outcome.
     *   Ranking of landing outcomes within a specific date range (2010-06-04 to 2017-03-20).
-*   **Notebooks:**
-    *   [EDA with Data Visualization Notebook]([YOUR_GITHUB_URL_FOR_EDA_VIZ_NOTEBOOK])
-    *   [EDA with SQL Notebook]([YOUR_GITHUB_URL_FOR_EDA_SQL_NOTEBOOK])
+*   **Relevant Files:**
+    *   [`jupyter-labs-eda-dataviz-v2.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-eda-dataviz-v2.ipynb)
+    *   [`jupyter-labs-eda-sql-coursera_sqllite.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
 
 ### Interactive Visual Analytics
 
@@ -103,9 +101,9 @@ My approach involved several key data science stages, from raw data collection t
     *   **Success Pie Chart:** Visualizes overall success/failure rates and per-site rates.
     *   **Payload Range Slider:** Allows filtering data by payload mass (0-10,000 kg in 1,000 kg steps) to analyze correlation with mission outcomes.
     *   **Payload vs. Success Rate Scatter Plot:** Shows the relationship between payload mass and launch outcome, color-coded by booster version.
-*   **Notebooks:**
-    *   [Interactive Map with Folium Notebook]([YOUR_GITHUB_URL_FOR_FOLIUM_NOTEBOOK])
-    *   [Dashboard with Plotly Dash Notebook]([YOUR_GITHUB_URL_FOR_PLOTLY_DASH_NOTEBOOK])
+*   **Relevant Files:**
+    *   [`lab_jupyter_launch_site_location.ipynb`](https://github.com/your-username/your-repo-name/blob/main/lab_jupyter_launch_site_location.ipynb) (For Folium Map)
+    *   [`Code_SN Labs_Dash.txt`](https://github.com/your-username/your-repo-name/blob/main/Code_SN%20Labs_Dash.txt) (Contains Python code for the Plotly Dash dashboard app)
 
 ### Predictive Analysis (Classification)
 
@@ -114,12 +112,13 @@ My approach involved several key data science stages, from raw data collection t
     1.  **Data Preprocessing:** Preparing features for model input.
     2.  **Data Splitting:** Dividing data into training and testing sets.
     3.  **Model Training and Evaluation:**
-        *   Models evaluated: Logistic Regression, Support Vector Machine (SVM), Decision Tree, k-Nearest Neighbors (kNN).
+        *   Models evaluated: Logistic Regression, Decision Tree, and k-Nearest Neighbors (kNN). *(Note: Support Vector Machine (SVM) was a planned evaluation, but its results are not explicitly shown in the provided execution trace for the notebook.)*
         *   Optimal parameters chosen using `GridSearchCV`.
         *   Performance evaluated using accuracy and confusion matrices.
     4.  **Model Improvement:** Iterative refinement of models.
     5.  **Selection of the most accurate model:** Identifying the best performing model.
-*   **Notebook:** [Predictive Analysis Notebook]([YOUR_GITHUB_URL_FOR_PREDICTIVE_ANALYSIS_NOTEBOOK])
+*   **Relevant File:**
+    *   [`SpaceX_Machine Learning Prediction_Part_5.ipynb`](https://github.com/your-username/your-repo-name/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
 
 ## Key Findings & Results
 
@@ -133,11 +132,14 @@ My approach involved several key data science stages, from raw data collection t
 
 ### Machine Learning Model Performance
 
-*   **Overall Accuracy:** The four machine learning classification models (Logistic Regression, SVM, Decision Tree, kNN) achieved an overall accuracy of **83%** on the test set.
-*   **Best Performing Model:** The **Decision Tree Model** demonstrated the highest individual accuracy at **89%**.
-*   **Failure Prediction:** All models correctly predicted 100% of the failures (true negatives).
-*   **False Positives:** While effective, some false positives (incorrectly predicting success) were observed across predictions.
-    *   *Note on specific test set performance:* For a particular test data split, all four models (Logistic Regression, SVM, Decision Tree, kNN) achieved an identical accuracy of **0.833333**, resulting in the same confusion matrix pattern (3 true positives, 3 false positives, 0 true negatives, 12 false negatives - *based on the image provided, assuming 'landed' is positive and 'did not land' is negative*). This indicates consistent performance across these models for that specific test case.
+*   **Overall Accuracy:** The classification models (Logistic Regression, Decision Tree, kNN) collectively demonstrated an overall accuracy of **83%** on the test set.
+*   **Individual Model Accuracy:** For the specific test data split and hyperparameter tuning presented:
+    *   Logistic Regression: **0.83333**
+    *   Decision Tree: **0.83333**
+    *   kNN: **0.83333**
+    *(Note: The `Decision Tree` section's overall best score in `GridSearchCV` was 0.8767857, but its score on the final `X_test` subset, like other models, was 0.83333. This consistent accuracy across models implies that for this particular test subset, they made identical predictions in terms of success/failure counts.)*
+*   **Failure Prediction:** All models correctly predicted 100% of the failures (true negatives in the confusion matrix).
+*   **False Positives:** Some false positives (incorrectly predicting success) were observed across predictions.
 
 ## How to Use
 
@@ -158,7 +160,14 @@ To explore this project:
     ```bash
     jupyter notebook
     ```
-    This will open Jupyter in your browser. Navigate to the `notebooks/` directory and open the `.ipynb` files in sequential order (or as per your interest) to see the code, analysis, and visualizations.
+    This will open Jupyter in your browser. All `.ipynb` files are located in the root directory and can be opened directly. It is recommended to run them in the order they appear in the `Methodology` section.
+
+4.  **Run Plotly Dash App (Optional):**
+    To run the interactive dashboard locally, execute the Python script:
+    ```bash
+    python "Code_SN Labs_Dash.txt"
+    ```
+    The app should then be accessible in your web browser, typically at `http://127.0.0.1:8050/`.
 
 ## Technologies Used
 
@@ -168,9 +177,45 @@ To explore this project:
 *   NumPy (for numerical operations)
 *   Requests (for API calls)
 *   BeautifulSoup4 (for web scraping)
-*   Scikit-learn (for machine learning models)
+*   Scikit-learn (for machine learning models: Logistic Regression, Decision Tree, KNeighborsClassifier)
 *   Plotly (for interactive visualizations and Dashboards)
+*   Dash (for building the web dashboard)
 *   Folium (for interactive mapping)
-*   SQL (for data querying and analysis)
+*   SQL (SQLite, for data querying and analysis)
+*   Matplotlib & Seaborn (for static visualizations)
 
-## Project Structure
+## Project Files
+
+This repository contains the following main files in the root directory:
+
+*   [`Code_SN Labs_Dash.txt`](https://github.com/your-username/your-repo-name/blob/main/Code_SN%20Labs_Dash.txt): Python script for the interactive Plotly Dash web application.
+*   [`README.md`](https://github.com/your-username/your-repo-name/blob/main/README.md): This project overview document.
+*   [`SpaceX_Machine Learning Prediction_Part_5.ipynb`](https://github.com/your-username/your-repo-name/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb): Jupyter notebook detailing the predictive analysis, including data preprocessing, model training (Logistic Regression, Decision Tree, kNN), and evaluation.
+*   [`jupyter-labs-eda-dataviz-v2.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-eda-dataviz-v2.ipynb): Jupyter notebook for Exploratory Data Analysis using various data visualizations.
+*   [`jupyter-labs-eda-sql-coursera_sqllite.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb): Jupyter notebook for Exploratory Data Analysis using SQL queries.
+*   [`jupyter-labs-spacex-data-collection-api.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-spacex-data-collection-api.ipynb): Jupyter notebook for collecting SpaceX launch data from the SpaceX REST API.
+*   [`jupyter-labs-webscraping.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-webscraping.ipynb): Jupyter notebook for web scraping Falcon 9 launch records from Wikipedia.
+*   [`lab_jupyter_launch_site_location.ipynb`](https://github.com/your-username/your-repo-name/blob/main/lab_jupyter_launch_site_location.ipynb): Jupyter notebook for building an interactive map of SpaceX launch sites using Folium.
+*   [`labs-jupyter-spacex-Data wrangling.ipynb`](https://github.com/your-username/your-repo-name/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb): Jupyter notebook for data wrangling, cleaning, and feature engineering.
+*   `requirements.txt`: Lists all Python dependencies required to run the project.
+*   `LICENSE`: The license file for this project.
+*   `images/` (optional): A directory for any images used in the README.
+
+## Author
+
+**Chiranjan Yathish**  
+*IBM Developer Skills Network*  
+*Project Date: 15/01/2025*
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/your-username/your-repo-name/blob/main/LICENSE) file for details.
+
+---
+
+**Final Checklist before uploading to GitHub:**
+
+1.  **Create a `requirements.txt` file:** In your project's root directory, with your virtual environment activated, run `pip freeze > requirements.txt`. This will list all the necessary Python packages.
+2.  **Create an `images/` directory (optional):** If you want the cover image (or any other screenshots), create a folder named `images` in your root directory and place your `cover_image.png` (or other image files) there. Adjust the path in the README if you use a different image name or no image.
+3.  **Create a `LICENSE` file:** Copy the MIT license text into a file named `LICENSE` in the root of your repository.
+4.  **Replace `your-username` and `your-repo-name`:** Go through the README and replace these placeholders in all GitHub URLs with your actual GitHub username and repository name.
