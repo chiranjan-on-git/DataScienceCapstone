@@ -1,7 +1,8 @@
 # Winning the Space Race with Data Science
 
-![SpaceX Falcon 9 Launch](https://github.com/your-username/your-repo-name/blob/main/images/cover_image.png?raw=true)
-*(Note: Replace `images/cover_image.png` with a path to a suitable image in your repo, or remove if no image is preferred)*
+![SpaceX Falcon 9 Launch]([https://github.com/your-username/your-repo-name/blob/main/images/cover_image.png?raw=true](https://github.com/chiranjan-on-git/falcon9-launch-analysis))
+<img width="3000" height="2000" alt="image" src="https://github.com/user-attachments/assets/437522c4-bd76-4d02-9f20-513dac034328" />
+
 
 ## Project Overview
 
