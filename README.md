@@ -17,6 +17,7 @@ I utilized data gathered from the SpaceX REST API and web scraping from Wikipedi
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ce984326-a9bb-4524-bf10-24e6e8a9538d" width="600" alt="Screenshot 2025-07-18 163714"/>
 </p>
+<p align="right"><em>Example code outputs</em></p>
                                                                                                                                                   
 ## Table of Contents
 
