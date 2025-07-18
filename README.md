@@ -1,8 +1,8 @@
 # Winning the Space Race with Data Science
 
-<img src="https://github.com/user-attachments/assets/bf0b9a10-7048-41da-8db5-308ce3b9e9b0" width="600" alt="image"/>
-
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/bf0b9a10-7048-41da-8db5-308ce3b9e9b0" width="600" alt="image"/>
+</p>
 
 ## Project Overview
 
