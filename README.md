@@ -1,8 +1,6 @@
 # Winning the Space Race with Data Science
 
-[`SpaceX Falcon 9 Launch`]([https://github.com/your-username/your-repo-name/blob/main/images/cover_image.png?raw=true](https://github.com/chiranjan-on-git/falcon9-launch-analysis))
-<img width="1500" height="1000" alt="image" src="https://github.com/user-attachments/assets/437522c4-bd76-4d02-9f20-513dac034328" width="500"/>
-
+![SpaceX Falcon 9 Launch](https://github.com/your-username/your-repo-name/blob/main/images/cover_image.png?raw=true)
 
 ## Project Overview
 
@@ -28,7 +26,6 @@ I utilized data gathered from the SpaceX REST API and web scraping from Wikipedi
 - [Technologies Used](#technologies-used)
 - [Project Files](#project-files)
 - [Author](#author)
-- [License](#license)
 
 ## Motivation
 
@@ -52,8 +49,8 @@ My approach involved several key data science stages, from raw data collection t
     *   I utilized the `requests` library to interact with the SpaceX REST API.
     *   I performed web scraping using libraries like `BeautifulSoup` to extract and parse HTML tables from Wikipedia.
 *   **Relevant Files:**
-    *   [`jupyter-labs-spacex-data-collection-api.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-spacex-data-collection-api.ipynb)
-    *   [`jupyter-labs-webscraping.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-webscraping.ipynb)
+    *   [`jupyter-labs-spacex-data-collection-api.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/jupyter-labs-spacex-data-collection-api.ipynb)
+    *   [`jupyter-labs-webscraping.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/jupyter-labs-webscraping.ipynb)
 
 ### Data Wrangling
 
@@ -67,7 +64,7 @@ My approach involved several key data science stages, from raw data collection t
         *   Number and occurrence of each orbit type.
         *   Mission outcomes for various orbits.
 *   **Relevant File:**
-    *   [`labs-jupyter-spacex-Data wrangling.ipynb`](https://github.com/your-username/your-repo-name/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb)
+    *   [`labs-jupyter-spacex-Data wrangling.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb)
 
 ### Exploratory Data Analysis (EDA)
 
@@ -88,8 +85,8 @@ My approach involved several key data science stages, from raw data collection t
     *   2015 launch records with 'Failure (drone ship)' outcome.
     *   Ranking of landing outcomes within a specific date range (2010-06-04 to 2017-03-20).
 *   **Relevant Files:**
-    *   [`jupyter-labs-eda-dataviz-v2.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-eda-dataviz-v2.ipynb)
-    *   [`jupyter-labs-eda-sql-coursera_sqllite.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
+    *   [`jupyter-labs-eda-dataviz-v2.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/jupyter-labs-eda-dataviz-v2.ipynb)
+    *   [`jupyter-labs-eda-sql-coursera_sqllite.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb)
 
 ### Interactive Visual Analytics
 
@@ -103,8 +100,8 @@ My approach involved several key data science stages, from raw data collection t
     *   **Payload Range Slider:** Allows filtering data by payload mass (0-10,000 kg in 1,000 kg steps) to analyze correlation with mission outcomes.
     *   **Payload vs. Success Rate Scatter Plot:** Shows the relationship between payload mass and launch outcome, color-coded by booster version.
 *   **Relevant Files:**
-    *   [`lab_jupyter_launch_site_location.ipynb`](https://github.com/your-username/your-repo-name/blob/main/lab_jupyter_launch_site_location.ipynb) (For Folium Map)
-    *   [`Code_SN Labs_Dash.txt`](https://github.com/your-username/your-repo-name/blob/main/Code_SN%20Labs_Dash.txt) (Contains Python code for the Plotly Dash dashboard app)
+    *   [`lab_jupyter_launch_site_location.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/lab_jupyter_launch_site_location.ipynb) (For Folium Map)
+    *   [`Code_SN Labs_Dash.txt`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/Code_SN%20Labs_Dash.txt) (Contains Python code for the Plotly Dash dashboard app)
 
 ### Predictive Analysis (Classification)
 
@@ -119,7 +116,7 @@ My approach involved several key data science stages, from raw data collection t
     4.  **Model Improvement:** Iterative refinement of models.
     5.  **Selection of the most accurate model:** Identifying the best performing model.
 *   **Relevant File:**
-    *   [`SpaceX_Machine Learning Prediction_Part_5.ipynb`](https://github.com/your-username/your-repo-name/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
+    *   [`SpaceX_Machine Learning Prediction_Part_5.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb)
 
 ## Key Findings & Results
 
@@ -148,8 +145,8 @@ To explore this project:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/chiranjan-on-git/falcon9-launch-analysis
+    cd falcon9-launch-analysis
     ```
 2.  **Install dependencies:** It's recommended to use a virtual environment.
     ```bash
@@ -189,18 +186,16 @@ To explore this project:
 
 This repository contains the following main files in the root directory:
 
-*   [`Code_SN Labs_Dash.txt`](https://github.com/your-username/your-repo-name/blob/main/Code_SN%20Labs_Dash.txt): Python script for the interactive Plotly Dash web application.
-*   [`README.md`](https://github.com/your-username/your-repo-name/blob/main/README.md): This project overview document.
-*   [`SpaceX_Machine Learning Prediction_Part_5.ipynb`](https://github.com/your-username/your-repo-name/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb): Jupyter notebook detailing the predictive analysis, including data preprocessing, model training (Logistic Regression, Decision Tree, kNN), and evaluation.
-*   [`jupyter-labs-eda-dataviz-v2.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-eda-dataviz-v2.ipynb): Jupyter notebook for Exploratory Data Analysis using various data visualizations.
-*   [`jupyter-labs-eda-sql-coursera_sqllite.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb): Jupyter notebook for Exploratory Data Analysis using SQL queries.
-*   [`jupyter-labs-spacex-data-collection-api.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-spacex-data-collection-api.ipynb): Jupyter notebook for collecting SpaceX launch data from the SpaceX REST API.
-*   [`jupyter-labs-webscraping.ipynb`](https://github.com/your-username/your-repo-name/blob/main/jupyter-labs-webscraping.ipynb): Jupyter notebook for web scraping Falcon 9 launch records from Wikipedia.
-*   [`lab_jupyter_launch_site_location.ipynb`](https://github.com/your-username/your-repo-name/blob/main/lab_jupyter_launch_site_location.ipynb): Jupyter notebook for building an interactive map of SpaceX launch sites using Folium.
-*   [`labs-jupyter-spacex-Data wrangling.ipynb`](https://github.com/your-username/your-repo-name/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb): Jupyter notebook for data wrangling, cleaning, and feature engineering.
+*   [`Code_SN Labs_Dash.txt`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/Code_SN%20Labs_Dash.txt): Python script for the interactive Plotly Dash web application.
+*   [`README.md`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/README.md): This project overview document.
+*   [`SpaceX_Machine Learning Prediction_Part_5.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/SpaceX_Machine%20Learning%20Prediction_Part_5.ipynb): Jupyter notebook detailing the predictive analysis, including data preprocessing, model training (Logistic Regression, Decision Tree, kNN), and evaluation.
+*   [`jupyter-labs-eda-dataviz-v2.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/jupyter-labs-eda-dataviz-v2.ipynb): Jupyter notebook for Exploratory Data Analysis using various data visualizations.
+*   [`jupyter-labs-eda-sql-coursera_sqllite.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/jupyter-labs-eda-sql-coursera_sqllite.ipynb): Jupyter notebook for Exploratory Data Analysis using SQL queries.
+*   [`jupyter-labs-spacex-data-collection-api.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/jupyter-labs-spacex-data-collection-api.ipynb): Jupyter notebook for collecting SpaceX launch data from the SpaceX REST API.
+*   [`jupyter-labs-webscraping.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/jupyter-labs-webscraping.ipynb): Jupyter notebook for web scraping Falcon 9 launch records from Wikipedia.
+*   [`lab_jupyter_launch_site_location.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/lab_jupyter_launch_site_location.ipynb): Jupyter notebook for building an interactive map of SpaceX launch sites using Folium.
+*   [`labs-jupyter-spacex-Data wrangling.ipynb`](https://github.com/chiranjan-on-git/falcon9-launch-analysis/blob/main/labs-jupyter-spacex-Data%20wrangling.ipynb): Jupyter notebook for data wrangling, cleaning, and feature engineering.
 *   `requirements.txt`: Lists all Python dependencies required to run the project.
-*   `LICENSE`: The license file for this project.
-*   `images/` (optional): A directory for any images used in the README.
 
 ## Author
 
@@ -208,15 +203,4 @@ This repository contains the following main files in the root directory:
 *IBM Developer Skills Network*  
 *Project Date: 15/01/2025*
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/your-username/your-repo-name/blob/main/LICENSE) file for details.
-
 ---
-
-**Final Checklist before uploading to GitHub:**
-
-1.  **Create a `requirements.txt` file:** In your project's root directory, with your virtual environment activated, run `pip freeze > requirements.txt`. This will list all the necessary Python packages.
-2.  **Create an `images/` directory (optional):** If you want the cover image (or any other screenshots), create a folder named `images` in your root directory and place your `cover_image.png` (or other image files) there. Adjust the path in the README if you use a different image name or no image.
-3.  **Create a `LICENSE` file:** Copy the MIT license text into a file named `LICENSE` in the root of your repository.
-4.  **Replace `your-username` and `your-repo-name`:** Go through the README and replace these placeholders in all GitHub URLs with your actual GitHub username and repository name.
