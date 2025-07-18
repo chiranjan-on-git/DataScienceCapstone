@@ -10,6 +10,10 @@ This project leverages advanced data science techniques to analyze historical Sp
 
 I utilized data gathered from the SpaceX REST API and web scraping from Wikipedia to build, analyze, and model launch outcomes. Machine Learning models were then applied to predict the successful landing of the first stage of Falcon rockets.
 
+<img width="1305" height="622" alt="Screenshot 2025-07-18 163627" src="https://github.com/user-attachments/assets/24e919de-1e20-4465-8110-122ebd4c9ac3" />
+<img width="1317" height="386" alt="Screenshot 2025-07-18 163714" src="https://github.com/user-attachments/assets/ce984326-a9bb-4524-bf10-24e6e8a9538d" />
+(example code outputs)
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
